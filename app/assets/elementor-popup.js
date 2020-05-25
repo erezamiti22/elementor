@@ -13,7 +13,7 @@ class ElementorPopup {
       fetch(url)
           .then(response => response.json())
           .then(data => {
-            this.content = data
+            this.content = data.data
             this.insertTextElement('h4', this.content.subHeader);
             this.insertTextElement('h1', this.content.header);
             this.insertTextElement('p', this.content.content);
