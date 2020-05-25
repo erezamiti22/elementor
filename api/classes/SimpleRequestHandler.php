@@ -4,6 +4,8 @@ include_once('RequestHandler.php');
 
 class SimpleRequestHandler extends RequestHandler
 {
+  private $method;
+
   public function __construct($method) {
     $this->method = $method;
   }
